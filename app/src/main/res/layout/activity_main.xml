@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:text=".:: Mosquitto MQTT Broker Android Cliente ::."
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_below="@+id/title"
+        android:text="Estado: "
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/status"
+        tools:text="Conectado/Desconectado"
+        android:textColor="#4CAF50"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/btnSendOn"
+        android:text="Enviar ON"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnSendOff"
+        android:text="Enviar OFF"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btnSendOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
